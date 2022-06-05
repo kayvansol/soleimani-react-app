@@ -33,11 +33,11 @@ export default class Profile extends Component {
         <div>
         <header className="jumbotron">
           <h3>
-            <strong>{currentUser.username}</strong> پروفایل
+            <strong>{currentUser.username}</strong> پروفایل کاربر
           </h3>
         </header>
         <p>
-          <strong>توکن :</strong>{" "}
+          <strong>توکن کاربر :</strong>{" "}
           {currentUser.accessToken.substring(0, 20)} ...{" "}
           {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
         </p>
@@ -46,7 +46,7 @@ export default class Profile extends Component {
           {currentUser.id}
         </p>
         <p>
-          <strong>ایمیل :</strong>{" "}
+          <strong>آدرس ایمیل :</strong>{" "}
           {currentUser.email}
         </p>
         <strong>نقش های کاربر :</strong>
