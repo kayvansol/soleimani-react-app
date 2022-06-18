@@ -10,19 +10,25 @@ const parseJwt = (token) => {
 };
 
 class AuthVerify extends Component {
+  
   constructor(props) {
+
     super(props);
 
     props.history.listen(() => {
+
       const user = JSON.parse(localStorage.getItem("user"));
 
       if (user) {
+
         const decodedJwt = parseJwt(user.accessToken);
 
         if (decodedJwt.exp * 1000 < Date.now()) {
           props.logOut();
         }
+
       }
+
     });
   }
 
