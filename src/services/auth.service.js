@@ -25,7 +25,7 @@ class AuthService {
 
   }
 
-  logout() {
+  logout() {   
     localStorage.removeItem("user");
   }
 
@@ -44,5 +44,5 @@ class AuthService {
   }
 
 }
-
+ 
 export default new AuthService();
